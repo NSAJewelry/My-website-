@@ -1,0 +1,248 @@
+/* General styles for the body */
+body {
+    font-family: Arial, sans-serif; /* Font family */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: black; /* Black background */
+    color: white; /* White text */
+}
+
+/* Header styles */
+header {
+    text-align: center; /* Center the header text */
+}
+
+/* Title styles */
+.title {
+    font-size: 3em; /* Title font size */
+    color: white; /* Title color */
+    margin-right: 20px; /* Space to the right */
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 10px 0; /* Margin for spacing */
+}
+
+nav ul li {
+    display: inline; /* Display list items inline */
+    margin: 0 15px; /* Space between navigation items */
+}
+
+nav ul li a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Main content styles */
+main {
+    padding: 20px; /* Padding for main content */
+}
+
+/* Flexbox content layout */
+.content {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    align-items: flex-start; /* Align items to the start */
+    width: 80%; /* Content width */
+    margin: 20px auto; /* Center content */
+}
+
+/* Text section styles */
+.text-section {
+    max-width: 50%; /* Max width for text section */
+}
+
+.text-section h2 {
+    font-size: 2.5em; /* Header font size */
+}
+
+.text-section p {
+    font-size: 1.2em; /* Paragraph font size */
+}
+
+/* Button styles */
+.button {
+    background-color: white; /* Button background color */
+    color: black; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 1em; /* Button font size */
+    margin-top: 20px; /* Space above button */
+}
+
+/* Image section styles */
+.image-section img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* About section styles */
+.about-section {
+    margin-top: 40px; /* Space above about section */
+}
+
+.about-content {
+    display: flex; /* Flexbox for about content */
+    flex-direction: column; /* Stack title and content */
+}
+
+.about-text {
+    color: white; /* White text color */
+    max-width: 50%; /* Max width for about text */
+    margin-bottom: 20px; /* Space below text */
+}
+
+/* Image gallery styles */
+.about-images {
+    display: flex; /* Flexbox for image gallery */
+    justify-content: space-between; /* Space between images */
+}
+
+.about-images img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between images */
+}
+
+/* Footer styles */
+footer {
+    text-align: center; /* Center footer text */
+    padding: 10px 0; /* Padding for footer */
+    background: darkgrey; /* Dark grey background */
+    color: white; /* White text */
+    position: relative; /* Relative positioning */
+    bottom: 0; /* Position at the bottom */
+    width: 100%; /* Full width */
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block; /* Block display on small screens */
+        margin: 10px 0; /* Space between items */
+    }
+
+    .content {
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center items */
+    }
+
+    .about-section {
+        flex-direction: column; /* Stack elements */
+        align-items: center; /* Center items */
+    }
+
+    .about-images {
+        flex-direction: column; /* Stack images vertically */
+    }
+}
+
+/* Custom styles for the Jewelry page */
+.jewelry-page body {
+    /* Inherit body styles */
+}
+
+.jewelry-page header {
+    /* Inherit header styles */
+}
+
+.jewelry-page .title {
+    font-size: 1.5em; /* Smaller title size */
+    color: white; /* Title color */
+    margin: 10px 0; /* Space above and below title */
+    text-align: center; /* Center the title */
+}
+
+.jewelry-page .price {
+    font-size: 1.2em; /* Price font size */
+    color: gold; /* Gold color for price */
+    text-align: center; /* Center the price */
+}
+
+.jewelry-page nav ul {
+    /* Inherit nav styles */
+}
+
+.jewelry-page nav ul li {
+    /* Inherit nav list item styles */
+}
+
+.jewelry-page nav ul li a {
+    /* Inherit nav link styles */
+}
+
+.jewelry-page main {
+    /* Inherit main styles */
+}
+
+.jewelry-page .gallery {
+    display: flex; /* Use flexbox for gallery */
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: space-between; /* Space evenly */
+}
+
+.jewelry-page .item {
+    width: calc(25% - 10px); /* Four items per row */
+    margin-bottom: 20px; /* Space between rows */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+/* Contact section styles */
+.contact-section {
+    margin: 40px 0; /* Space around contact section */
+}
+
+.contact-icons {
+    display: flex; /* Flexbox for icons */
+    justify-content: center; /* Center icons */
+    gap: 30px; /* Space between icons */
+}
+
+.icon {
+    text-decoration: none; /* Remove underline from icon links */
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.icon img {
+    width: 50px; /* Icon width */
+    height: 50px; /* Icon height */
+}
+
+.icon:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+/* Search container styles */
+.search-container {
+    position: relative; /* Relative positioning for suggestions */
+}
+
+.suggestions {
+    border: 1px solid lightgrey; /* Light grey border */
+    max-height: 150px; /* Max height for suggestions */
+    overflow-y: auto; /* Scroll if overflow */
+    position: absolute; /* Absolute positioning */
+    background: white; /* White background */
+    z-index: 1000; /* Stack above other elements */
+    width: 100%; /* Full width */
+    display: none; /* Initially hidden */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Shadow for visibility */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.suggestion-item {
+    padding: 10px; /* Padding for suggestion items */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 14px; /* Font size for suggestions */
+    color: darkgrey; /* Dark grey text color */
+}
+
+.suggestion-item:hover {
+    background: lightgrey; /* Light grey background on hover */
+}
+ 
+
